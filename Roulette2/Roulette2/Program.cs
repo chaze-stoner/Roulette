@@ -1178,12 +1178,12 @@ namespace Roulette2
                 Console.WriteLine("Press ENTER to continue");
                 Console.ReadLine();
 
-                LowHighBets();
+                DozenBets();
             }
             if (s == "1") { s = "1-12"; return s; }
             if (s == "2") { s = "13-24"; return s; }
             if (s == "3") { s = "25-36"; return s; }
-            else LowHighBets();
+            else DozenBets();
             return null;
         }
 
