@@ -1261,11 +1261,11 @@ namespace Roulette2
             Console.WriteLine("Select your bet.");
             Console.WriteLine();
             Console.WriteLine(" 1 = (1, 2, 3, 4, 5, 6)");
-            Console.WriteLine(" 2 = Row  2 (7, 8, 9, 10, 11, 12)");
-            Console.WriteLine(" 3 = Row  3 (13, 14, 15, 16, 17, 18)");
-            Console.WriteLine(" 4 = Row  4 (19, 20, 21, 22, 23, 24)");
-            Console.WriteLine(" 5 = Row  5 (25, 26, 27, 28, 29, 30)");
-            Console.WriteLine(" 6 = Row  6 (31, 32, 33, 34, 35, 36)");
+            Console.WriteLine(" 2 = (7, 8, 9, 10, 11, 12)");
+            Console.WriteLine(" 3 = (13, 14, 15, 16, 17, 18)");
+            Console.WriteLine(" 4 = (19, 20, 21, 22, 23, 24)");
+            Console.WriteLine(" 5 = (25, 26, 27, 28, 29, 30)");
+            Console.WriteLine(" 6 = (31, 32, 33, 34, 35, 36)");
 
             string s = Console.ReadLine().ToLower();
 
