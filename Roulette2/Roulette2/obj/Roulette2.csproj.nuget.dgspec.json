@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MSSA\\VS Projects\\Roulette\\Roulette2\\Roulette2\\Roulette2.csproj": {}
+    "D:\\mssa\\vs projects\\Roulette\\Roulette2\\Roulette2\\Roulette2.csproj": {}
   },
   "projects": {
-    "E:\\MSSA\\VS Projects\\Roulette\\Roulette2\\Roulette2\\Roulette2.csproj": {
+    "D:\\mssa\\vs projects\\Roulette\\Roulette2\\Roulette2\\Roulette2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MSSA\\VS Projects\\Roulette\\Roulette2\\Roulette2\\Roulette2.csproj",
+        "projectUniqueName": "D:\\mssa\\vs projects\\Roulette\\Roulette2\\Roulette2\\Roulette2.csproj",
         "projectName": "Roulette2",
-        "projectPath": "E:\\MSSA\\VS Projects\\Roulette\\Roulette2\\Roulette2\\Roulette2.csproj",
-        "packagesPath": "C:\\Users\\dicta\\.nuget\\packages\\",
-        "outputPath": "E:\\MSSA\\VS Projects\\Roulette\\Roulette2\\Roulette2\\obj\\",
+        "projectPath": "D:\\mssa\\vs projects\\Roulette\\Roulette2\\Roulette2\\Roulette2.csproj",
+        "packagesPath": "C:\\Users\\Cryptlogic\\.nuget\\packages\\",
+        "outputPath": "D:\\mssa\\vs projects\\Roulette\\Roulette2\\Roulette2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dicta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Cryptlogic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

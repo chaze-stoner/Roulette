@@ -938,126 +938,140 @@ namespace Roulette2
 
             Console.WriteLine();
 
-            for (int i = 5, j = 6, k = 7; i < array.GetLength(0)/3; i+=3,j += 3,k += 3)
+            for (int i = 5, j = 6, k = 7; i < array.GetLength(0); i+=3,j += 3,k += 3)
             {
-                if (s == sorted[i, 0])
+                if (ar[0,0] == sorted[i, 0])
                 {
-                    if (ar[0, 0] == sorted[i, 0] || ar[0, 0] == sorted[i - 3, 0] || ar[0, 0] == sorted[i - 2, 0] || ar[0, 0] == sorted[i + 1, 0] || ar[0, 0] == sorted[i + 3, 0] || ar[0, 0] == sorted[i + 4, 0])
+                    if (s == sorted[i, 0] || s == sorted[i - 3, 0] || s == sorted[i - 2, 0] || s == sorted[i + 1, 0] || s == sorted[i + 3, 0] || s == sorted[i + 4, 0])
                     {
                         int winnings = Player.EightToOne(player, wager);
                         Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
                         $" you won ${winnings}");
+                        Console.WriteLine($"The winning numbers were {sorted[i, 0]},{sorted[i - 3, 0] },{sorted[i - 2, 0]},{sorted[i + 1, 0]},{sorted[i + 3, 0]},{sorted[i + 4, 0]}");
                         break;
                     }
                     else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
                         $" you lost ${wager}");
+                    Console.WriteLine($"The winning numbers were {sorted[i, 0]},{sorted[i - 3, 0] },{sorted[i - 2, 0]},{sorted[i + 1, 0]},{sorted[i + 3, 0]},{sorted[i + 4, 0]}");
                 }
-                if (s == sorted[j, 0])
+                if (ar[0, 0] == sorted[j, 0])
                 {
-                    if (ar[0, 0] == sorted[j, 0] || ar[0, 0] == sorted[j - 1, 0] || ar[0, 0] == sorted[j - 2, 0] || ar[0, 0] == sorted[j - 3, 0] || ar[0, 0] == sorted[j - 4, 0] || ar[0, 0] == sorted[j + 1, 0] || ar[0, 0] == sorted[j + 2, 0] || ar[0, 0] == sorted[j + 3, 0] || ar[0, 0] == sorted[j + 4, 0])
+                    if (s == sorted[j, 0] || s == sorted[j - 1, 0] || s == sorted[j - 2, 0] || s == sorted[j - 3, 0] || s == sorted[j - 4, 0] || s == sorted[j + 1, 0] || s == sorted[j + 2, 0] || s == sorted[j + 3, 0] || s == sorted[j + 4, 0])
                     {
                         int winnings = Player.EightToOne(player, wager);
                         Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
                         $" you won ${winnings}");
+                        Console.WriteLine($"The winning numbers were {sorted[j, 0]},{sorted[j - 1, 0] },{sorted[j - 2, 0]},{sorted[j - 3, 0]},{sorted[j - 4, 0]},{sorted[j + 1, 0]},{sorted[j + 2, 0]},{sorted[j + 3, 0]},{sorted[j + 4, 0]}");
                         break;
                     }
                     else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
                         $" you lost ${wager}");
+                    Console.WriteLine($"The winning numbers were {sorted[j, 0]},{sorted[j - 1, 0] },{sorted[j - 2, 0]},{sorted[j - 3, 0]},{sorted[j - 4, 0]},{sorted[j + 1, 0]},{sorted[j + 2, 0]},{sorted[j + 3, 0]},{sorted[j + 4, 0]}");
                 }
-                if (s == sorted[k, 0])
+                if (ar[0, 0] == sorted[k, 0])
                 {
-                    if (ar[0, 0] == sorted[k, 0] || ar[0, 0] == sorted[k - 1, 0] || ar[0, 0] == sorted[k - 3, 0] || ar[0, 0] == sorted[k - 4, 0] || ar[0, 0] == sorted[k + 2, 0] || ar[0, 0] == sorted[k + 3, 0])
+                    if (s == sorted[k, 0] || s == sorted[k - 1, 0] || s == sorted[k - 3, 0] || s == sorted[k - 4, 0] || s == sorted[k + 2, 0] || s == sorted[k + 3, 0])
                     {
                         int winnings = Player.EightToOne(player, wager);
                         Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
                         $" you won ${winnings}");
+                        Console.WriteLine($"The ball lands on {sorted[k, 0]}, {sorted[k - 1, 0]}, {sorted[k - 3, 0]}, {sorted[k - 4, 0]}, {sorted[k + 2, 0]}, {sorted[k + 3, 0]}");
                         break;
                     }
                     else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
                         $" you lost ${wager}");
+                    Console.WriteLine($"The ball lands on {sorted[k, 0]}, {sorted[k - 1, 0]}, {sorted[k - 3, 0]}, {sorted[k - 4, 0]}, {sorted[k + 2, 0]}, {sorted[k + 3, 0]}");
                 }
-                if (s == "1")
+            }
+
+            if (ar[0, 0] == "1")
+            {
+                if (s == "1" || s == "2" || s == "4" || s == "5")
                 {
-                    if (ar[0, 0] == "1" || ar[0, 0] == "2"|| ar[0, 0] == "4" || ar[0, 0] == "5")
-                    {
-                        int winnings = Player.EightToOne(player, wager);
-                        Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you won ${winnings}");
-                        break;
-                    }
-                    else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you lost ${wager}");
-                }
-                if (s == "2")
-                {
-                    if (ar[0, 0] == "1" || ar[0, 0] == "2" || ar[0, 0] == "3" || ar[0, 0] == "4" || ar[0, 0] == "5" || ar[0, 0] == "6")
-                    {
-                        int winnings = Player.EightToOne(player, wager);
-                        Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you won ${winnings}");
-                        break;
-                    }
-                    else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you lost ${wager}");
-                }
-                if (s == "3")
-                {
-                    if (ar[0, 0] == "2" || ar[0, 0] == "3" || ar[0, 0] == "5" || ar[0, 0] == "6")
-                    {
-                        int winnings = Player.EightToOne(player, wager);
-                        Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you won ${winnings}");
-                        break;
-                    }
-                    else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you lost ${wager}");
-                }
-                if (s == "34")
-                {
-                    if (ar[0, 0] == "31" || ar[0, 0] == "32" || ar[0, 0] == "34" || ar[0, 0] == "35")
-                    {
-                        int winnings = Player.EightToOne(player, wager);
-                        Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you won ${winnings}");
-                        break;
-                    }
-                    else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you lost ${wager}");
-                }
-                if (s == "35")
-                {
-                    if (ar[0, 0] == "31" || ar[0, 0] == "32" || ar[0, 0] == "33" || ar[0, 0] == "34" || ar[0, 0] == "35" || ar[0, 0] == "36")
-                    {
-                        int winnings = Player.EightToOne(player, wager);
-                        Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you won ${winnings}");
-                        break;
-                    }
-                    else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you lost ${wager}");
-                }
-                if (s == "36")
-                {
-                    if (ar[0, 0] == "32" || ar[0, 0] == "33" || ar[0, 0] == "35" || ar[0, 0] == "36")
-                    {
-                        int winnings = Player.EightToOne(player, wager);
-                        Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you won ${winnings}");
-                        break;
-                    }
-                    else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                        $" you lost ${wager}");
-                }
-                if (ar[0, 0] == "0" || ar[0, 0] == "00")
-                {
+                    int winnings = Player.EightToOne(player, wager);
                     Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
-                    $" you lost ${wager}");
-                    break;
+                    $" you won ${winnings}");
+                    Console.WriteLine("The winning numbers where 1,2,3,5");
+                    
                 }
                 else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
                     $" you lost ${wager}");
-
+                Console.WriteLine("The winning numbers where 1,2,3,5");
             }
+            if (ar[0,0] == "2")
+            {
+                if (s == "1" || s == "2" || s == "3" || s == "4" || s == "5" || s == "6")
+                {
+                    int winnings = Player.EightToOne(player, wager);
+                    Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you won ${winnings}");
+                    Console.WriteLine("The winning numbers where 1,2,3,4,5,6");
+
+                }
+                else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you lost ${wager}");
+                Console.WriteLine("The winning numbers where 1,2,3,4,5,6");
+            }
+            if (ar[0, 0] == "3")
+            {
+                if (s == "2" ||  s == "3" || s == "5" || s == "6")
+                {
+                    int winnings = Player.EightToOne(player, wager);
+                    Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you won ${winnings}");
+                    Console.WriteLine("The winning numbers where 2,3,5,6");
+
+                }
+                else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you lost ${wager}");
+            }
+            if (ar[0, 0] == "34")
+            {
+                if (s == "31" || s == "32" || s == "34" || s == "35")
+                {
+                    int winnings = Player.EightToOne(player, wager);
+                    Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you won ${winnings}");
+                    Console.WriteLine("The winning numbers where 31,32,34,35");
+
+                }
+                else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you lost ${wager}");
+                 Console.WriteLine("The winning numbers where 31,32,34,35");
+            }
+            if (ar[0, 0] == "35")
+            {
+                if (s == "31" || s == "32" || s == "33" || s == "34" || s == "35" || s == "36")
+                {
+                    int winnings = Player.EightToOne(player, wager);
+                    Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you won ${winnings}");
+                    Console.WriteLine("The winning numbers where 31,32,33,34,35,36");
+
+                }
+                else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you lost ${wager}");
+                 Console.WriteLine("The winning numbers where 31,32,33,34,35,36");
+            }
+            if (ar[0, 0] == "36")
+            {
+                if (s == "32" || s == "33" || s == "35" || s == "36")
+                {
+                    int winnings = Player.EightToOne(player, wager);
+                    Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you won ${winnings}");
+                    Console.WriteLine("The winning numbers where 32,33,35,36");
+                }
+                else Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                    $" you lost ${wager}");
+                Console.WriteLine("The winning numbers where 32,33,35,36");
+            }
+            if (ar[0, 0] == "0" || ar[0, 0] == "00")
+            {
+                Console.WriteLine($"The ball lands on {ar[0, 1]}, {ar[0, 0]}" +
+                $" you lost ${wager}");  
+            }
+            
 
             Console.WriteLine("Press ENTER to continue");
             Console.ReadLine();

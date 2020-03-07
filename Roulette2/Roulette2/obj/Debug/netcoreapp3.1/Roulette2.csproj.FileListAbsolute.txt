@@ -31,3 +31,14 @@ E:\MSSA\VS Projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulett
 E:\MSSA\VS Projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulette2.AssemblyInfo.cs
 E:\MSSA\VS Projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulette2.dll
 E:\MSSA\VS Projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulette2.pdb
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\bin\Debug\netcoreapp3.1\Roulette2.exe
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\bin\Debug\netcoreapp3.1\Roulette2.deps.json
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\bin\Debug\netcoreapp3.1\Roulette2.runtimeconfig.json
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\bin\Debug\netcoreapp3.1\Roulette2.runtimeconfig.dev.json
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\bin\Debug\netcoreapp3.1\Roulette2.dll
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\bin\Debug\netcoreapp3.1\Roulette2.pdb
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulette2.csprojAssemblyReference.cache
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulette2.AssemblyInfoInputs.cache
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulette2.AssemblyInfo.cs
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulette2.dll
+D:\mssa\vs projects\Roulette\Roulette2\Roulette2\obj\Debug\netcoreapp3.1\Roulette2.pdb
